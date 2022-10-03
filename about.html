@@ -1,0 +1,69 @@
+
+
+<html>
+    <head>
+    
+        <title>Angelic Nails</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body background="background.png">
+   <center>
+      <h1 class="btn btn-info heading">Angelic Nails</h1>
+      <h3 class="btn btn-primary">Welcome to Angelic Nails! Do you need a manicure or pedicure? Well you are welcome here and very lucky for the first 4 times you come you dont have to pay.The 5th time you can membership or you can pay like a regular customer. VIP cards are avalible! VIP cards will give you 2 month with no pay. If you come a all in the first place! If you get MEMBER SHIP, you can have no pay for 1 month. In order to get a card, you gotta pay. For VIP, it'll be $25.20. For membership, it'll be $15.50. You can get both membership, and VIP cards renewed after you card has expired. VIP will expire in 2 months, where as membership will be expired in 1 month.
+      </h3>
+      <a href="index.html" class="btn">Back</a>
+      <br><br><br><br>
+      
+        
+      </h3>  
+    </center>
+    
+    <script>
+      ;
+    
+      img = "";
+
+    function preload(){
+      
+    }
+
+
+    
+    function setup() {
+  canvas = createCanvas(640, 420);
+  canvas.center();
+  
+}
+
+function modelLoaded(){
+    console.log('model is Loaded');
+
+}
+
+function gotResult(error,result){
+if(error){
+    console.error(error);
+}
+console.log(result);
+
+}
+
+function draw() {
+  image(img, 0, 0, 640, 420);
+
+}
+    
+    </script>
+    
+    </body>
+    
+    </html>

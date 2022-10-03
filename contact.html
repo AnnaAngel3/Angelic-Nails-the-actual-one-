@@ -1,0 +1,66 @@
+
+
+<html>
+    <head>
+    
+        <title>Angelic Nails</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+    
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/p5.js/1.0.0/p5.js"></script>
+    
+      <script src="https://unpkg.com/ml5@latest/dist/ml5.min.js"></script>
+      <link rel="stylesheet" type="text/css" href="style.css">
+    </head>
+    
+    <body background="background.png">;
+    <center>
+      <h1 class="btn btn-info heading">Angelic Nails</h1>
+     
+      </h3>
+      <a href="index.html" class="btn">Back</a>
+      <br><br><br><br>
+<p style="color:black">To contact us you need to be in the HRICF group. Nissi is at the register counter,she will help you with anything you ask of her(she can paint your nails too if asked), Anna is one of nail designers and can do whatever you would like, Angel is the owner and is the lead nail desinger and will paint your nails too! So ask for relaxing manicure or pedicure and we will give it to ya at Angelic Nails(HRICF members and reliatives only!) </p>
+ <br><br>
+     
+      </h3>  
+    </center>
+    
+    <script>
+    
+    
+  
+
+    
+    function setup() {
+  canvas = createCanvas(640, 420);
+  canvas.center();
+  
+}
+
+function modelLoaded(){
+    console.log('model is Loaded');
+Status=true;
+
+}
+
+function gotResult(error,result){
+if(error){
+    console.error(error);
+}
+console.log(result);
+
+}
+
+function draw() {
+  image(img, 0, 0, 640, 420);
+
+}
+    
+    </script>
+    
+    </body>
+    
+    </html>
